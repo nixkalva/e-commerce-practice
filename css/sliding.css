@@ -1,0 +1,38 @@
+#hed1{
+	background-color: #50263C;
+	color: #50263C;
+}
+tr.tr1{
+	text-align: center;
+}
+#t1{
+  border-color: solid red;
+}
+#r1{
+	text-align: center;
+	color: #9843C6;
+}
+#t1{
+	float: right;
+}
+#f1{
+	float: left;
+   margin: 30px;
+   color: white;
+}
+p.p1{
+	color: white;
+	text-decoration: line-through;
+}
+#bt1{
+	float: right;
+}
+.target{
+	float: right;
+}
+#body1{
+	background-image: url("darkbk.jpg");
+}
+.rate{
+	color: white;
+}

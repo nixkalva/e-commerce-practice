@@ -1,0 +1,120 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Shopping Cart</title>  
+    <link rel="stylesheet" href="./css/checkout.css" type="text/css" media="screen">  
+
+	<script>/*<![CDATA[*/!window.QUnit && document.write('<script src="inc/qunit.js"><\/script>')/*]]>*/</script>
+	<script src="http://swarm.simplecartjs.com/js/inject.js"></script>
+	
+    <!-- Your project file goes here -->  
+	<script>/*<![CDATA[*/
+	
+	if( QUnit.urlParams.lib && QUnit.urlParams.ver ){
+		document.write('<script src="https://ajax.googleapis.com/ajax/libs/'+ 
+					QUnit.urlParams.lib + '/' + 
+					QUnit.urlParams.ver + '/' + 
+					QUnit.urlParams.lib + '.js"><\/script>');
+	} else {
+		document.write('<script src="inc/jquery.1.6.1.min.js"><\/script>');
+	}
+	
+	if( QUnit.urlParams.commit ){
+		document.write('<script src="inc/get-raw-javascript.php?file=https://raw.github.com/wojodesign/simplecart-js/'+ QUnit.urlParams.commit +'/simpleCart.js"><\/script>');
+		document.write('<script src="inc/get-raw-javascript.php?file=https://raw.github.com/wojodesign/simplecart-js/'+ QUnit.urlParams.commit +'/test/test.core.js"><\/script>');
+	} else {
+		document.write('<script src="../simpleCart.js"><\/script>');
+		document.write('<script type="text/javascript" src="test.core.js"><\/script>');
+	}
+	/*]]>*/</script>
+
+	
+	<style >
+
+	 	.itemContainer{
+			width:100%;
+			float:left;
+		}
+
+		.itemContainer div{
+			float:left;
+			margin: 5px 20px 5px 20px ;
+		}
+
+		.itemContainer a{
+			text-decoration:none;
+		}
+
+		.cartHeaders{
+			width:100%;
+			float:left;
+		}
+
+		.cartHeaders div{
+			float:left;
+			margin: 5px 20px 5px 20px ;
+		}
+
+
+	</style>
+
+
+</head>  
+<body>  
+	
+	<h1 id="qunit-header">Shopping Cart</h1>  
+    <h2 id="qunit-banner"></h2>  
+    <div id="qunit-testrunner-toolbar"></div>  
+    <h2 id="qunit-userAgent"></h2>  
+    <ol id="qunit-tests"></ol>
+	
+	<p>
+	Cart: <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)
+	<br />
+	
+	</p>
+
+
+	<ul>
+		<li class="simpleCart_shelfItem">
+			<h2 class="item_name">Silver metallic sandal with flower</h2
+			<span style="font-weight:bold; class=item_price" ></span>			<img class="item_thumb" src="./images/f2.jpg" height="200" width="200" />
+			
+			<select class="item_Size">
+				<option value="Small">Small</option>
+				<option value="Medium">Medium</option>
+				<option value="Large">Large</option>	
+			</select>	
+			
+			
+			
+			<input type="hidden" class="item_shipping" value="20" />	
+			<input type="text" class="item_quantity" value="1" />
+			
+			<input type="submit" style="font-face: 'Comic Sans MS'; font-size: larger; color: white; background-color: #FF8000; border: 3pt ridge lightgrey" value=" Add to cart ">
+
+		</li>
+
+
+	   </ul>
+	<div class="simpleCart_items" >
+	</div>
+
+	<div class="sc_demo_items" >
+	</div>
+
+	<br />
+	<div id="tax">
+	<h3>SubTotal:Rs 2449<span id="simpleCart_total" class="simpleCart_total"></span></h3> <br />
+	<h3>Tax Rate: 5%<span id="simpleCart_taxRate" class="simpleCart_taxRate"></span> </h3><br />
+	<h3>Tax: Rs 150 <span id="simpleCart_tax" class="simpleCart_tax"></span></h3> <br />
+	<h3>Shipping:Rs 150 <span id="simpleCart_shipping" class="simpleCart_shipping"></span></h3> <br />
+	-----------------------------<br />
+	<h2>Final Total:Rs 2749 <span id="simpleCart_grandTotal" class="simpleCart_grandTotal"></span></h2> <br />
+	<a href="payy.html" class="simpleCart_checkout"><h3>Checkout</a>	</h3>
+</div>
+	
+	<div id="test_id"></div>
+    
+</body>  
+</html>

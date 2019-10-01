@@ -1,0 +1,163 @@
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="purses.css">
+<script type="text/javascript">
+function expand(pur){
+	var d,s;
+	d=document.getElementById('im1');
+	u=document.getElementById('front');
+	v=document.getElementById('back');
+	x=document.getElementById('inside');
+	y=document.getElementById('im3');
+	s=pur.src;
+	d.src=s;
+	d.style.width='450px';
+	d.style.height='250px';
+	pur.style.border='1px solid black';
+	if(d.src==u.src){
+		v.style.border='0px solid black';
+		x.style.border='0px solid black';
+		y.style.border='0px solid black';
+	}
+		else if(d.src==v.src){
+	u.style.border='0px solid black';
+		x.style.border='0px solid black';
+		y.style.border='0px solid black';
+}
+	else if(d.src==x.src){
+	v.style.border='0px solid black';
+		u.style.border='0px solid black';
+		y.style.border='0px solid black';
+}
+else if(d.src==y.src){
+	v.style.border='0px solid black';
+		x.style.border='0px solid black';
+		u.style.border='0px solid black';
+}
+else{}
+}
+function rem(pur){
+	d=document.getElementById('im1');
+	u=document.getElementById('front');
+	v=document.getElementById('back');
+	x=document.getElementById('inside');
+	y=document.getElementById('im3');
+	if(d.src==u.src){
+		v.style.border='0px solid black';
+		x.style.border='0px solid black';
+		y.style.border='0px solid black';
+	}
+		else if(d.src==v.src){
+	u.style.border='0px solid black';
+		x.style.border='0px solid black';
+		y.style.border='0px solid black';
+}
+	else if(d.src==x.src){
+	v.style.border='0px solid black';
+		u.style.border='0px solid black';
+		y.style.border='0px solid black';
+}
+else if(d.src==y.src){
+	v.style.border='0px solid black';
+		x.style.border='0px solid black';
+		u.style.border='0px solid black';
+}
+else{}
+}
+function expand1(pur){
+	var d,s;
+	d=document.getElementById('im1');
+	s=pur.src;
+	d.src=s;
+	d.style.width='130px';
+	d.style.height='250px';
+	pur.style.border='1px solid black'
+	u=document.getElementById('front');
+	v=document.getElementById('back');
+	x=document.getElementById('inside');
+	y=document.getElementById('im3');
+	if(d.src==u.src){
+		v.style.border='0px solid black';
+		x.style.border='0px solid black';
+		y.style.border='0px solid black';
+	}
+		else if(d.src==v.src){
+	u.style.border='0px solid black';
+		x.style.border='0px solid black';
+		y.style.border='0px solid black';
+}
+	else if(d.src==x.src){
+	v.style.border='0px solid black';
+		u.style.border='0px solid black';
+		y.style.border='0px solid black';
+}
+else if(d.src==y.src){
+	v.style.border='0px solid black';
+		x.style.border='0px solid black';
+		u.style.border='0px solid black';
+}
+else {
+} 
+}
+</script>
+<body>
+	<a href="home.html" id="bak">Home</a>
+<div id="d1">
+	<img src="purse3.jpg" id="im1">
+</div>
+<div id="d3">
+	<p id="p1">Bluth Women Green Artificial Leather Wallet</p>
+	<pre><p id="p3"> <img src="write.jpg" id="im4">  Write a review </p></pre>
+	<ul id="li1">
+	<li class="list1">Made of Polyurethane</li>
+	<li class="list1">Magnetic Snap Button</li>
+	<li class="list1">Trendy</li>
+	<li class="list1">Ideal for Women</li>
+</ul>
+</div>
+
+<div id="tab1">
+<table id="t1">
+	<tr><td>
+<img src="purse3.jpg" class="im2" onMouseOver="expand(this)" onMouseOut="rem(this)" id="front">&nbsp
+	</td>
+<td>
+<img src="purse32.jpg" class="im2" onMouseOver="expand(this)" onMouseOut="rem(this)" id="back">&nbsp
+</td>
+<td>
+<img src="purse33.jpg" class="im2" onMouseOver="expand(this)" onMouseOut="rem(this)" id="inside">&nbsp
+</td>
+<td>
+<img src="purse34.jpg" id="im3" onMouseOver="expand1(this)" onMouseOut="rem(this)">&nbsp
+</td>
+</tr>
+</table>
+</div>
+<pre><strong id="terms1">	Available for shipping.
+	Cash on delivery is available.
+	Usually Delivered in 4-5 business days.</strong></pre>
+	<a href="pays.html"><img src="buyimg.jpg" class="im5"></a>
+   	<pre><p id="p2">Rs. 492	 </p></pre>
+		<br><br><br><br>
+		<table width="100%" id="table1">
+			<br><br><br>
+			<tr>
+				<td><img src="bluepurse.jpg" class="i1"></td>
+				<td><img src="pinkpurse.jpg" class="i1"></td>
+				<td><img src="violetpurse.jpg" class="i1"></td>
+				<td><img src="orangepurse.jpg" class="i1"></td>
+			</tr>
+			<tr class="tr">
+				<td>Rs.389</td><td>Rs.525</td><td>Rs.675</td><td>Rs.357</td>
+			</tr>
+			<tr>
+				<td><img src="newpurse.jpg" class="i1"></td>
+				<td><img src="blackpurse.jpg" class="i1"></td>
+				<td><img src="greenpurse.jpg" class="i1"></td>
+				<td><img src="brownpurse.jpg" class="i1"></td>
+			</tr>
+			<tr class="tr">
+				<td>Rs.389</td><td>Rs.525</td><td>Rs.675</td><td>Rs.357</td>
+			</tr>
+		</table>
+
+</body>

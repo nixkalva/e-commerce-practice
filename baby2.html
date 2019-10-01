@@ -1,0 +1,56 @@
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="./css/baby2.css">
+<body>
+<div id="d1">
+	<form>
+Enter your child's details to personalize results:
+<input type="text" placeholder="Enter your child name">
+<input type="date" placeholder="Date of birth">
+<input type="radio" value="a"> Boy
+<input type="radio" value="a"> Girl
+<input type="submit" value="Submit">
+</form>
+</div>
+<div id="p1">
+<h2>Choose Color: </h2><br>
+<input type="color" value-="c">
+<br><br>
+<h2>Choose Sizes:</h2><br>
+<h3><input type="submit" value=18-24M>
+
+                     <input type="submit" value=24-24M></h3><br>
+<h3><input type="submit" value=30-30M>                       <input type="submit" value=3-3Y></h3><br>
+</div>
+
+
+<div id="de">
+ <pre>
+ 	<h3 style="text-decoration:underline";>Features:</h3><ul><li>Velcro closure</li><li>Generous width for plenty of wiggle room</li><li>Padded Collar</li><h3 style="text-decoration:underline";>Fabric & Care Instructions:</h3><ul><li> Handcrafted from butter-soft leather</li><li>Breathable leather insole and lining. </li><li> Flexible rubber sole</li><li>Wipe Clean</li>
+</pre>
+</div>
+<div id="but">
+<input type="button" value ="-" onclick="zoom(0.9)"/>
+<input type="button" value ="+" onclick="zoom(1.1)"/>
+</div>
+<div id="thediv">
+<img id="pic" src="./images/f2.jpg" width="300" height="300">
+</div>
+<script>
+window.onload = function(){zoom(1)}
+
+
+function zoom(zm) {
+img=document.getElementById("pic")
+wid=img.width
+ht=img.height
+img.style.width=(wid*zm)+"px"
+img.style.height=(ht*zm)+"px"
+    img.style.marginLeft = -(img.width/2) + "px";
+    img.style.marginTop = -(img.height/2) + "px";
+}
+
+</script>
+<div id="sub">
+<a href="checkout.html"><input type="submit" style="font-face: 'Comic Sans MS'; font-size: larger; color: white; background-color: #FF8000; border: 3pt ridge lightgrey" value=" Add to cart "></a>
+</div>
+</body>

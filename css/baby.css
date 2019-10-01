@@ -1,0 +1,49 @@
+#f1{
+	float: left;
+	margin: 30px;
+	height: 500px;
+	width: 100px;
+	background:#A9F5F2
+}
+
+#f2
+{
+	float: left;
+	height: 500px;
+	width: 100px;
+	margin: 30px;
+	background:#A9F5F2
+
+}
+
+#h2{ display: inline;
+	text-align: center;
+	font: 80px Helvetica,Sans-Serif;
+	letter-spacing: -5px;
+	color: rgba(0,100,255,0.5);
+	background: #F6CEE3;
+	height: 50px;
+	font-family: comic sans;
+
+
+}
+tr.tr1
+{
+  text-align: center;
+}
+#t1
+{
+	float: right;
+	background-image: url("pink.jpg");
+	  }
+
+	  tr.tr2
+	  {
+	  	text-align: center;
+	  	font-family:"Times New Roman", Times, serif;
+
+
+	  }
+	  #b1{
+	  	text-align: center;
+	  }

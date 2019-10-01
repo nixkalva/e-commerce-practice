@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<body onload="startTimer();devicesTimer();giftsTimer();mobileTimer();sportsTimer();usecanvas();" id="b1">
+	<link rel="stylesheet" type="text/css" href="./css/home.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ ``	<script>
+		$(document).ready(function showed(){
+			$("#offer").toggle(2000,showed);
+   		});
+	</script>
+
+	<script type="application/javascript">
+		function usecanvas(){
+     		var canvas=document.getElementById("mycanvas");
+			var context=canvas.getContext("2d");
+			context.font='60px Comic Sans MS';
+			context.fillStyle='green';
+			context.strokeStyle='black';
+			context.lineWidth=3;
+			context.fillText("WELCOME TO NIK ONLINE SHOP",100,70);
+			context.strokeText("WELCOME TO NIK ONLINE SHOP",100,70);
+		}
+	 	function changeImage(){
+		   x=(x===images.length-1)?0:x+1;
+		   document.getElementById("img").src=images[x];
+	    }
+        function mobileImage(){
+	    	y=(y===mobiles.length-1)?0:y+1;
+	   		document.getElementById("mobiles").src=mobiles[y];
+       	}
+       	function sportsImage(){
+		   	k=(k===sports.length-1)?0:k+1;
+		   	document.getElementById("sports").src=sports[k];
+       	}
+       	function devicesImage(){
+		    u=(u===devices.length-1)?0:u+1;
+		    document.getElementById("devices").src=devices[u];
+       	}
+       	function giftsImage(){
+		    c=(c===gifts.length-1)?0:c+1;
+		    document.getElementById("gifts").src=gifts[c];
+        }
+        function mobileTimer(){
+	  	    mt=setInterval(mobileImage,2000)
+	  	}
+	  	function sportsTimer(){
+	  		st=setInterval(sportsImage,5000)
+	  	}
+	  	function devicesTimer(){
+	  	 	dt=setInterval(devicesImage,3500)
+	  	}
+        function giftsTimer(){
+	  	 	gt=setInterval(giftsImage,3000)
+	  	}
+	  	function mobilestop(){
+	  	    clearInterval(mt);
+	  	}
+	  	function devicesstop(){
+	  	    clearInterval(dt);
+	  	}
+	  	function sportsstop(){
+	  	    clearInterval(st);
+	  	}
+        function giftsstop(){
+	  	    clearInterval(gt);
+	  	}
+	  	function startTimer(){
+	  		setInterval(changeImage,3000)
+		}
+	  	
+	  	var images=[],x=-1,y=-1,k=-1;
+	    var mobiles=[],st,mt,dt;
+	    var sports=[];
+	    var devices=[],u=-1;
+	    var gifts=[],c=-1,gt;
+	    
+	    images[0]="./images/dress1.jpg";
+	    images[1]="./images/dress2.jpg";
+	    images[2]="./images/dress3.jpg";
+	    images[3]="./images/dress5.jpg";
+	    mobiles[0]="./images/mobile1.jpg";
+	    mobiles[1]="./images/mobile2.jpg";
+	    mobiles[2]="./images/tablet2.jpg";
+	    mobiles[3]="./images/mobile3.jpg";
+	    mobiles[4]="./images/mobile4.jpg";
+	    mobiles[5]="./images/mobile5.jpg";
+	    sports[0]="./images/shoes1.jpg";
+	    sports[1]="./images/stick.jpg";
+	    sports[2]="./images/bat1.jpg";
+	    sports[3]="./images/ball1.jpg";
+	    devices[0]="./images/machine.jpg"
+	    devices[1]="./images/cooker1.jpg"
+	    devices[2]="./images/mixi.jpg"
+	    devices[3]="./images/tv.jpg"
+	    gifts[0]="./images/gift2.jpg"
+	    gifts[1]="./images/gift3.jpg"
+	    gifts[2]="./images/gift4.jpg"
+	    gifts[3]="./images/gift1.jpg"
+	     
+</script>
+<canvas id="mycanvas" width="1200" height="110"></canvas>
+<img src="./images/offer.jpg" id="offer">
+<table border="1" width="100%" id="t1">
+	<tr>
+		<td id="l1"><img id="fimg" src="./images/facebook1.jpg"></td>
+		<td id="l1"><img id="fimg"src="./images/twitter1.jpg"></td>
+		<td id="l1"><img id="fimg" src="./images/google.jpg"></td>
+		<td id="l2"><img id="fimg" src="./images/flickr.jpg"></td>
+		<td id="l2"><img id="fimg"src="./images/whatsapp.jpg"></td>
+		<td id="l2"><img id="fimg"src="./images/googleplus.jpg"></td>
+	</tr>
+</table>
+<marquee behaviour="scroll" id="m1">
+ <b>All kinds of items are avaialble.&nbsp Discount upto 50%.&nbsp Terms and Conditions Apply.&nbsp Enjoy Online Shopping.</b>
+</marquee>
+<img id="img" src="./images/dress8.jpg">
+<table id="tab1">
+	<tr><td>
+		<form>
+			<select name="Women's Wear">
+				<option>Women's Wear</option>
+				<option>Sarees</option>
+			    <option>Salwar</option>
+			    <option>Jewelley</option>
+			    <option>Rings</option>
+				<option>Tops</option>
+				<option>Kurtis</option>
+			</select>
+			<select name="Men">
+				<option>Men's Wear</option>
+				<option>Trousers</option>
+				<option>Formal Shirts</option>
+				<option>T-Shirts</option>
+				<option>Suits</option>
+				<option>Jeans</option>
+				<option>Blazers</option>
+			</select>
+			<select name="Electronics">
+				<option>Mobiles</option>
+				<option>Tablets</option>
+				<option>Laptops</option>
+				<option>Waching Machines</option>
+				<option>Samsung</option>
+				<option>Motorola</option>
+				<option>Asus</option>
+			</select>
+			<select name="Baby &amp Kids">
+				<option> Baby and Kids&nbsp &nbsp</option>
+				<option>Baby Toys</option>
+				<option>Barbie</option>
+				<option>Ben 10</option>
+				<option>Soft Toys</option>
+				<option>Clothing</option>
+				<option>Footwear</option>
+			</select>
+			<select name="Home">
+				<option>Home  and Furniture&nbsp &nbsp</option>
+				<option>Bedsheets</option>
+				<option>Coffe Mugs</option>
+				<option>Dinnerware</option>
+				<option>Containers</option>
+				<option>Sofa Covers</option>
+				<option>Diwan Sets</option>
+			</select>
+			<select name="Books">
+				<option>Books and Media&nbsp &nbsp </option>
+				<option>Fiction</option>
+				<option>History &amp Politics</option>
+				<option>Free eBooks</option>
+				<option>e-learning</option>
+				<option>Online Tests</option>
+				<option>Literature</option>
+			</select>
+		</form>
+		</td>
+	</tr>
+</table>
+
+<img id="mobiles" src="./images/tablet1.jpg" onMouseOut="mobileTimer()" onMouseOver="mobilestop()">
+<img id="sports" src="./images/shoes2.jpg" onMouseOut="sportsTimer()" onMouseOver="sportsstop()">
+<table width="15%" border="1" id="t2">
+	<tr><td><a style="color:white" href="baby.html">Baby Footwear</td></tr>
+	<tr><td>Sports</td></tr>
+	<tr><td>Watches</td></tr>
+	<tr><td><a style="color:white" href="purses.html">Wallet</td></tr>
+	<tr><td>Ornaments</td></tr>
+	<tr><td>Key Chains</td></tr>
+	<tr><td ><a style="color:white" href="sliding.html">Women's Wear</a></td></tr>
+	<tr><td>Diaries and NoteBooks</td></tr>
+	<tr><td>Files</td></tr>
+	<tr><td>Gifts</td></tr>
+	<tr><td>Hand Tools and Kits</td></tr>
+	<tr><td>Glassware</td></tr>
+	<tr><td>Camping</td></tr>
+	<tr><td>Swimming</td></tr>
+	<tr><td>Polishes and Wax</td></tr>
+	<tr><td>Helmets and Gloves</td></tr>
+	<tr><td>Security and Safety</td></tr>
+	<tr><td>Pillows and Cushions</td></tr>
+	<tr><td>Skin Care Products</td></tr>
+	<tr><td>Sunglasses</td></tr>
+</table>
+<br>
+	<img id="devices" src="./images/camera1.jpg"onMouseOver="devicesstop()" onMouseOut="devicesTimer()">
+<img id="gifts" src="gift1.jpg" onMouseOut="giftsTimer()" onMouseOver="giftsstop()">
+</body>
+</html>
